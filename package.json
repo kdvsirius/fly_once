@@ -1,0 +1,27 @@
+{
+  "name": "fly-sync",
+  "description": "Sync operation for node with redis",
+  "main": "index.js",
+  "author": "Dmitriy kurlovich",
+  "version": "0.0.1",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FlyMyTo/fly_sync"
+  },
+  "devDependencies": {
+    "extend": "*",
+    "request": "*"
+  },
+  "homepage": "https://github.com/FlyMyTo/fly_sync",
+  "dependencies": {
+    "redis": "^0.11.0"
+  },
+  "bugs": {
+    "url": "https://github.com/FlyMyTo/fly_sync/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}
