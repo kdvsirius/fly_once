@@ -1,5 +1,5 @@
 {
-  "name": "fly-sync",
+  "name": "fly-once",
   "description": "Sync operation for node with redis",
   "main": "./src/index.js",
   "author": "Dmitriy kurlovich",
@@ -7,18 +7,18 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git://github.com/kdvsirius/fly_sync.git"
+    "url": "git://github.com/kdvsirius/fly_once.git"
   },
   "devDependencies": {
     "extend": "*",
     "request": "*"
   },
-  "homepage": "https://github.com/kdvsirius/fly_sync.git",
+  "homepage": "https://github.com/kdvsirius/fly_once.git",
   "dependencies": {
     "redis": "^0.11.0"
   },
   "bugs": {
-    "url": "https://github.com/FlyMyTo/fly_sync/issues"
+    "url": "https://github.com/FlyMyTo/fly_once/issues"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

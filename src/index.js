@@ -4,15 +4,20 @@
 var redis = require("redis")
 exports = module.exports = function(connect_options){
 
-		var client = redis.createClient(connect_options.port,connect_options.host);
+		try{
+				var client = redis.createClient(connect_options.port,connect_options.host);
+		}catch(e){
+				throw new Error('fly-once redis connection wrong params');
+		}
+
 		return {
 				'once' : function(key,callback){
-						console.log(client);
+
 						try{
 								var application = currentApplication;
 						}
 						catch(err){
-								console.error('fly-sync current Application not defined');
+								console.error('fly-once current Application not defined');
 								var application = 'undefined';
 						}
 
