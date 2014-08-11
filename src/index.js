@@ -18,12 +18,13 @@ exports = module.exports = function(connect_options){
 						}
 						catch(err){
 								console.error('fly-once current Application not defined');
-								var application = 'undefined';
+								var application = '';
 						}
 
 						key = application+'_'+key;
 						client.setnx(key,new Date().getTime(),function(err,val){
 								if(val === 1){
+										client.expire(key,86400);
 										callback(null);
 								}else{
 										callback(true);
