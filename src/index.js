@@ -24,7 +24,7 @@ exports = module.exports = function(connect_options){
 						key = application+'_'+key;
 						client.setnx(key,new Date().getTime(),function(err,val){
 								if(val === 1){
-										client.expire(key,86400);
+										client.expire(key,10000);
 										callback(null);
 								}else{
 										callback(true);
